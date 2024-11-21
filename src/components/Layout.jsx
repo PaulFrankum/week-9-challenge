@@ -3,17 +3,15 @@ import Footer from './Footer';
 
 const pages = [
   { name: 'Home', key: 'home' },
+  { name: 'GitHub Projects', key: 'git' },
   { name: 'About', key: 'about' },
   { name: 'Contact', key: 'contact' },
 ]
 
 const Layout = ({ children, selectedPage, onSetPage }) => {
 
-  // TODO: what's stored in children, selectedPage, and onSetPage?
-
   const renderPageLinks = () => {
-        
-    // TODO: What does this function do?
+
     return pages.map(page => (
        <li
           key={page.key}

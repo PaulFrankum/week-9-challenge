@@ -30,9 +30,21 @@ body {
   min-height: 100vh;
 }
 
+.center{
+  text-align: center;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  position:sticky;
+  top:0%;
+}
+
 h1 {
   font-size: 3.2em;
-  line-height: 1.1;
+  line-height: 0;
+  text-align:center;
+  padding: 25px;
 }
 
 h2{
@@ -60,8 +72,10 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
-.phone-label::before{content: "📞";}
+.name-label::before{content: "✒";}
 .email-label::before{content: "✉️";}
+.phone-label::before{content: "📞";}
+.message-label::before{content: "M";}
 
   /* Styling the Terms and Conditions Link On Contact Page*/
   .terms-link {
@@ -94,7 +108,18 @@ button:focus-visible {
     margin-bottom: 15px;
     text-align: left;
   }
-
+  .about-container {
+    background-color: #cccccc;
+    padding: 20px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 400px;
+    text-align: justify;
+    border: 4px solid white;
+    box-shadow: 5px 10px grey;
+    margin:50px auto;
+    color:black;
+  }
 
 @media (prefers-color-scheme: light) {
   :root {
