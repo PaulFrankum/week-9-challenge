@@ -26,12 +26,11 @@ const Layout = ({ children, selectedPage, onSetPage }) => {
     ));
   }
 
-
   return (
-    <div style={styles.container}>
+    <>
+    <div id="desktop-menu" style={styles.container}>
       {/* Navigation */}
       <NavBar />
-
       <div style={styles.main}>
         {/* Sidebar */}
         <aside style={styles.sidebar}>
@@ -45,18 +44,28 @@ const Layout = ({ children, selectedPage, onSetPage }) => {
           {children}
         </section>
       </div>
-
       {/* Footer */}
       <Footer />
-     
     </div>
+    <div id="mobile-menu" style={styles.container}>
+      {/* Navigation */}
+      <NavBar />
+      <div style={styles.main}>
+        {/* Content Area */}
+        <section style={styles.content}>
+          {children}
+        </section>
+      </div>
+      {/* Footer */}
+      <Footer />
+    </div>
+  </>
   );
 };
 
 // Inline styles for simplicity
 const styles = {
   container: {
-    display: 'flex',
     flexDirection: 'column',
     minHeight: '100vh',
     minWidth: '100vw',
@@ -69,6 +78,7 @@ const styles = {
     flex: 1,
   },
   sidebar: {
+    display: 'block',
     width: '200px',
     backgroundColor: '#f4f4f4',
     padding: '5px',

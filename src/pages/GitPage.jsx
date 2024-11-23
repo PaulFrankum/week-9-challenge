@@ -11,6 +11,10 @@ for (let i = 0; i < x; i++) {
 
 function HomePage() {
   return (
+    <>
+    <div class="contact-form-container">
+      <h2>GitHub Projects:</h2>
+    </div>
     <div>           
       <table style={styles.table}>
         <tr style={styles.table}>
@@ -20,6 +24,7 @@ function HomePage() {
           <th style={styles.table}>Created</th>
           <th style={styles.table}>Last Update</th>      
         </tr>
+        {/* Make for loop to add all git repos and capture 404 errors <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */}
         {/* <tr>
           <td style={styles.table}><a target='_blank' rel='noopener noreferrer' href={response.data[i].svn_url}>{response.data[i].svn_url}</a></td> 
           <td style={styles.table}><a target='_blank' rel='noopener noreferrer' href={'https://paulfrankum.github.io/' + response.data[0].name}>{'https://paulfrankum.github.io/' + response.data[i].name}</a></td>
@@ -50,6 +55,7 @@ function HomePage() {
         </tr>
       </table>
     </div>
+    </>
 );
 }      
 

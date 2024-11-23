@@ -36,7 +36,6 @@ body {
   justify-content: center;
   align-items: center;
   margin: auto;
-  position:sticky;
   top:0%;
 }
 
@@ -44,13 +43,14 @@ h1 {
   font-size: 3.2em;
   line-height: 0;
   text-align:center;
-  padding: 25px;
+  padding: 5px;
 }
 
 h2{
   text-decoration: underline;
   text-align:center;
   font-size: 2em;
+  color: black;
 }
   
 button {
@@ -75,7 +75,7 @@ button:focus-visible {
 .name-label::before{content: "✒";}
 .email-label::before{content: "✉️";}
 .phone-label::before{content: "📞";}
-.message-label::before{content: "M";}
+.message-label::before{content: "📨";}
 
   /* Styling the Terms and Conditions Link On Contact Page*/
   .terms-link {
@@ -96,13 +96,24 @@ button:focus-visible {
     background-color: #cccccc;
     padding: 20px;
     border-radius: 15px;
-    width: 100%;
     max-width: 400px;
     text-align: center;
     border: 4px solid white;
     box-shadow: 5px 10px grey;
     margin:50px auto;
   }
+  .home-container {
+    background-color: #cccccc;
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 800px;
+    text-align: justify;
+    border: 4px solid white;
+    box-shadow: 5px 10px grey;
+    margin:50px auto;
+    color:black;
+  }
+
   .form-group {
     color: black;
     margin-bottom: 15px;
@@ -112,7 +123,6 @@ button:focus-visible {
     background-color: #cccccc;
     padding: 20px;
     border-radius: 15px;
-    width: 100%;
     max-width: 400px;
     text-align: justify;
     border: 4px solid white;
@@ -133,3 +143,28 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+#mobile-menu {
+  display: none;
+
+}
+.active{
+  font-size: .8em;
+}
+#desktop-menu {
+  display: flex;
+  flex: 1,
+}
+
+@media screen and (max-width: 1175px) {
+  #mobile-menu {display: flex;}
+  .header h1 {font-size:1rem;}
+  .header h2 {font-size:1rem;}
+  h1 {font-size:1rem;}
+  h2 {font-size:1rem;}
+  body h3 {font-size:1rem;}
+  body p {font-size:.75rem;}
+  .topnav a {font-size 7px;}
+  #desktop-menu{display:none;}
+  #mylinks a {padding:4px 6px;}
+  }

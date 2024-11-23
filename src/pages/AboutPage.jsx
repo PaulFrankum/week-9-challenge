@@ -4,10 +4,12 @@ import PMF from '../assets/bigpic.jpg';
 
 const HomePage = () => {
   return (
+    <>
     <div class="about-container">
-      <h1>About Page</h1>
-
-      <img src ={PMF} alt = "Headshot of Paul Frankum" class ="center" height={225} width={180} />
+      <h2>About Page:</h2>
+    </div>
+    <div class="about-container">
+      <img src ={PMF} alt = "Headshot of Paul Frankum" class ="center" height={225}/>
            
       <p>I am a former Basngstoke and Deane Borough Councillor,
       voted by all parties to Chair Scrutiny Committee through
@@ -24,7 +26,9 @@ const HomePage = () => {
       disabled parking with about 200 spaces to manage. I also 
       collect Whisky from around the world and have currently 
       about 340 bottles (unopened!).</p>
+      
     </div>
+    </>
   );
 };
 
