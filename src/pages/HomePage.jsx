@@ -2,16 +2,17 @@
 import React from 'react';
 import marine from '/src/assets/Rotary_marine.jpg';
 import shoebox from '/src/assets/shoeboxes.jpg';
+import step8up from '/src/assets/step8up.png';
 
 const HomePage = () => {
   return (
 <>
 {/* // make 3 div arrow in right left <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */}
-<div class="centre home-container aboutpm">
+
+<div className="centre home-container aboutpm">
   <h2>Current Projects </h2>
 </div>
-      <div Id="marineBand" class="home-container aboutpm marineBand">
-
+      <div id="marineBand" className="home-container aboutpm marineBand">
       <h2>Welcome to PM Frankum Portfolio (Using React)</h2>
       <p>I am lead Member on the Marine Band Concert.
       Basingstoke Deane Rotary are delighted to once again to be organising and hosting the world renown 'Band of His Majesty’s Royal Marines - Collingwood’ supported by the amazing Corp of Drums. All the band members are fully trained and operational military personnel producing some wonderful pieces by very talented musicians. Of course, once again among our VIP guests are the charismatic Chelsea Pensioners. 
@@ -19,10 +20,10 @@ All funds raised from the concert benefit; The Royal Marines Charity; Royal Hosp
 If you are at a loss for Christmas presents, tickets to this lively concert are a great idea for all ages and as it is on a Sunday afternoon, a convenient time for just about everyone.
 I do hope you will come and join us where we can all have a wonderful time, finishing off with Land of Hope and Glory and flag waving just like the Night of the Proms.</p>
 
-      <a target='_blank' rel='noopener noreferrer' href='https://www.anvilarts.org.uk/events/the-band-of-his-majestys-royal-marines'><img src={marine} alt="link to Marine band at anvil" class= "center" id="desktop-menu" height={800}/></a>
-      <a target='_blank' rel='noopener noreferrer' href='https://www.anvilarts.org.uk/events/the-band-of-his-majestys-royal-marines'><img src={marine} alt="link to Marine band at anvil" class= "center" id="mobile-menu" height={300}/></a>
+      <a target='_blank' rel='noopener noreferrer' href='https://www.anvilarts.org.uk/events/the-band-of-his-majestys-royal-marines'><img src={marine} alt="link to Marine band at anvil" className= "center" id="desktop-menu" height={800}/></a>
+      <a target='_blank' rel='noopener noreferrer' href='https://www.anvilarts.org.uk/events/the-band-of-his-majestys-royal-marines'><img src={marine} alt="link to Marine band at anvil" className= "center" id="mobile-menu" height={300}/></a>
         </div>
-        <div Id="shoebox" class="home-container aboutpm shoebox">
+        <div id="shoebox" className="home-container aboutpm shoebox">
           <h2>Christmas Shoebox Appeal 2024</h2>
       <p>Roatry Basingstoke and Deane collected 857 boxes this year which are now on their way to deserving children in Ukraine, Moldova, Romania and Montenegro.
 I can report a great Total of 20,455 Shoeboxes having been delivered to the depot during these difficult times from across the Wessex region. We have now completed all custom required paperwork, now awaiting approvals from each Country’s shipping agents to enable us to dispatch, proposed next Weds 13th Nov.
@@ -34,13 +35,19 @@ Also, with 4109 Shoeboxes (281 cartons) plus 2 cartons of Woollen knitted items 
 All three lorries will arrive by end of this month giving the Host Clubs more time to delivery out well before Christmas.
 Many thanks for supporting again this year and for changing to collect dates before half term holidays.
 I will inform you all when all safely delivered to host Clubs and have been handed out to the disadvantaged Children they support, Pictures will be forward in due time after Christmas.</p>
-<a target='_blank' rel='noopener noreferrer' href='https://www.rotary-ribi.org/clubs/page.php?PgID=954128&ClubID=1523'><img src={shoebox} alt="Picture of shoe box on sorting night" class= "center" id="desktop-menu" height={400}/></a>
-<a target='_blank' rel='noopener noreferrer' href='https://www.rotary-ribi.org/clubs/page.php?PgID=954128&ClubID=1523'><img src={shoebox} alt="Picture of shoe box on sorting night" class= "center" id="mobile-menu"height={200}/></a>
+<a target='_blank' rel='noopener noreferrer' href='https://www.rotary-ribi.org/clubs/page.php?PgID=954128&ClubID=1523'><img src={shoebox} alt="Picture of shoe box on sorting night" className= "center" id="desktop-menu" height={400}/></a>
+<a target='_blank' rel='noopener noreferrer' href='https://www.rotary-ribi.org/clubs/page.php?PgID=954128&ClubID=1523'><img src={shoebox} alt="Picture of shoe box on sorting night" className= "center" id="mobile-menu"height={200}/></a>
 </div>
 
-<div id="skillsbootcamp" class="home-container aboutpm skillsbootcamp">
+<div id="skillsbootcamp" className="home-container aboutpm skillsbootcamp">
 <h2>Full Stack Web Development Bootcamp Sep24-Jan25</h2>
 {/* add data <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */}
+<p>Government Funded Training. Software Developer. L4.
+With Job Placement.
+Available both remotely and in person. Fully funded by the government. Designed for job changers and job seekers looking to upskill and accelerate their careers in the tech industry. 4 months. Remote. LIVE. Guided. BCS Accredited.</p>
+<a target='_blank' rel='noopener noreferrer' href='https://step8up.co.uk/'><img src={step8up} alt="logo step8up academey" className= "center" id="desktop-menu" height={150}/></a>
+<a target='_blank' rel='noopener noreferrer' href='https://step8up.co.uk/'><img src={step8up} alt="logo step8up academey" className= "center" id="mobile-menu" height={50}/></a>
+
 </div>
 
 </>
@@ -49,6 +56,3 @@ I will inform you all when all safely delivered to host Clubs and have been hand
 
 export default HomePage;
 
-  /* .marineBand { display: none;} */
-  /* .shoebox { display: block;} */
-  /* .skillsbootcamp { display: none;} */

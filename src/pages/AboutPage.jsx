@@ -5,11 +5,11 @@ import PMF from '../assets/bigpic.jpg';
 const HomePage = () => {
   return (
     <>
-    <div class="about-container">
+    <div className="about-container">
       <h2>About Page:</h2>
     </div>
-    <div class="about-container">
-      <img src ={PMF} alt = "Headshot of Paul Frankum" class ="center" height={225}/>
+    <div className="about-container">
+      <img src ={PMF} alt = "Headshot of Paul Frankum" className ="center" height={225}/>
            
       <p>I am a former Basngstoke and Deane Borough Councillor,
       voted by all parties to Chair Scrutiny Committee through

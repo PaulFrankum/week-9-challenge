@@ -1,40 +1,35 @@
 // HomePage.js
 import React from 'react';
 
-const handleSubmit = (e) => {
-  e.preventDefault();
-  alert(`Form submitted:\nName: ${formData.name}\nEmail: ${formData.email}\nMessage: ${formData.message}\nHeard Of Us: ${formData.hearOfUs}\nOther Source: ${formData.otherSource}`);
-};
-
 const HomePage = () => {
   return (
     // make form do alert and finish <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
     <>
-    <div class="contact-form-container aboutpm">
+    <div className="contact-form-container aboutpm">
       <h2>Contact Page:</h2>
     </div>
     <div>
+      {/* needs tohave somewhere otop send form data change action when got it */}
       <form action="#" method="POST">
-        <div class="contact-form-container aboutpm">
-          <div class="form-group">
-            <label for="name" class="name-label">Name:</label>
+        <div className="contact-form-container aboutpm">
+          <div className="form-group">
+            <label htmlFor="name" className="name-label">Name:</label>
             <input type="text" placeholder="Enter Name" style={{ padding: '8px', width: '96%'}}/>
           </div>
-          <div class="form-group">
-            <label for="email" class="email-label">Email:</label>
+          <div className="form-group">
+            <label htmlFor="email" className="email-label">Email:</label>
             <input type="email" placeholder=" Enter Email" style={{ padding: '8px', width: '96%'}}/>
           </div>
-          <div class="form-group">
-            <label for="phone" class="phone-label">Phone:</label>
+          <div className="form-group">
+            <label htmlFor="phone" className="phone-label">Phone:</label>
             <input type="tel" placeholder=" Enter Telephone Number" style={{ padding: '8px', width: '96%'}}/>
           </div>
-          <div class="form-group">
-            <label for="message" class="message-label">Message:</label>
+          <div className="form-group">
+            <label htmlFor="message"className="message-label">Message:</label>
             <textarea id="message" placeholder="Message" rows="8" cols="52" style={{ padding: '8px', width: '96%'}}></textarea>
           </div>
-
-          <button type="submit">Submit</button>
-          <p><a href="#home" class="terms-link" >Terms and Conditions</a></p>
+        {/* Reset form as no back end to send data change to submit when form action is sorted at top*/}
+          <button type="reset">Submit</button>
         </div>
       </form>
     </div>

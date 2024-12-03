@@ -51,6 +51,12 @@ const Layout = ({ children, selectedPage, onSetPage }) => {
       {/* Navigation */}
       <NavBar />
       <div style={styles.main}>
+          {/* Sidebar */}
+          <aside style={styles.sidebar2}>
+          <ul>
+           {renderPageLinks()}
+          </ul>
+        </aside>
         {/* Content Area */}
         <section style={styles.content}>
           {children}
@@ -77,8 +83,16 @@ const styles = {
     display: 'flex',
     flex: 1,
   },
-  sidebar: {
-    display: 'block',
+   sidebar: {
+    display: 'flex',
+    position: 'fixed',
+    width: '200px',
+    height: '100%',
+    backgroundColor: '#f4f4f4',
+    padding: '5px',
+  },
+  sidebar2: {
+    display: 'none',
     width: '200px',
     backgroundColor: '#f4f4f4',
     padding: '5px',
@@ -94,11 +108,16 @@ const styles = {
     padding: '10px',
   },
   sidebarLink: {
-    display: 'block',
+    display: 'flex',
+    position: 'sticky', 
     padding: '5px',
     color: '#333',
     textDecoration: 'none',
   },
+ footer: {
+  zindex:"1"
+},
+
 };
 
 export default Layout;
