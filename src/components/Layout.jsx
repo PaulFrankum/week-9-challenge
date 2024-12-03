@@ -83,7 +83,7 @@ const styles = {
     display: 'flex',
     flex: 1,
   },
-   sidebar: {
+  sidebar: {
     display: 'flex',
     position: 'fixed',
     width: '200px',
@@ -106,6 +106,7 @@ const styles = {
     color: '#fff',
     textAlign: 'center',
     padding: '10px',
+      zindex:"1"
   },
   sidebarLink: {
     display: 'flex',
@@ -114,10 +115,6 @@ const styles = {
     color: '#333',
     textDecoration: 'none',
   },
- footer: {
-  zindex:"1"
-},
-
 };
 
 export default Layout;
