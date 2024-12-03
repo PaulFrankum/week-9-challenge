@@ -2,7 +2,7 @@
 import React from 'react';
 import marine from '/src/assets/Rotary_marine.jpg';
 import shoebox from '/src/assets/shoeboxes.jpg';
-import step8up from '/src/assets/step8up.png';
+import step8up from '/src/assets/Step8up.png';
 
 const HomePage = () => {
   return (
